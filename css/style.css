@@ -5,9 +5,11 @@
 }
 * {
 	box-sizing: border-box;
-	background-image: "../img/main-background.jpg";
+	background: url("../img/main-background.jpg");
 	background-size: cover;
 }
 div {
 	font-family: "New Rocker";
+	color: gray;
+
 }
