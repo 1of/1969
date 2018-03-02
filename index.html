@@ -2,14 +2,135 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Site</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">	
 	<link rel="stylesheet" href="css/style.css">
-	<title>1969 Open</title>
+	<link rel="stylesheet" href="css/font-awesome/font-awesome.css">
+	<link rel="stylesheet" href="css/hamburgers.css">
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+
 </head>
-<body> Eat and wait
-	<header><div>Lorem ipsum dolor sit amet.</div>
-	<div>Lorem ipsum dolor sit amet.</div>
-	<div>Lorem ipsum dolor sit amet.</div>
-	<div>Lorem ipsum dolor sit amet.</div>
-	</header>
+<body>
+<!--HEADER-->
+<header class="fixed-menu container-fluid">
+	<div class="inner-content header-box row"> 
+		<div class="hamburger hamburger--3dx col-2">
+	    <div class="hamburger-box">
+	      <div class="hamburger-inner"></div>
+	    </div>
+		</div>
+		<div class="menu-adress col-3">
+			<div>
+				<span>Kharkiv, 3, Sumskay st.</span><span>info@open1969.com</span>
+			</div>
+			<div class="icons">
+				<a href=""><i class="fa fa-map-marker"></i></a>
+			</div>
+		</div>
+		<div class="menu-phone col-3"> 
+			<div>
+				<span>+38 (068) 089-48-83</span><span>+38 (099) 554-93-65</span>
+			</div>
+			<div class="icons">
+				<a href=""><i class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<div class="icons-social col-md-auto">
+		<a href=""><i class="fa fa-twitter"></i></a>
+		<a href=""><i class="fa fa-instagram"></i></a>
+		<a href=""><i class="fa fa-facebook"></i></a>
+		</div>
+	</div>
+</header>
+<!--CONTENT-->
+<main>
+	<section class="section-header">
+	<div class="inner-content">
+		<div class="menu"><ul>
+			<li><a href="#advantage" onclick="slowScroll('#advantage')">Advantage</a></li>
+			<li><a href="#">Our offices</a></li>
+			<li><a href="#">Discount</a></li>
+			<li><a href="#">Statistics</a></li>
+			<li><a href="#">Reviews</a></li>
+			<li><a href="#">Details</a></li>
+			<li><a href="#">Gift</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>	</div>
+		<div class="form-box">
+		<div class="logo-box">
+			<h1>coworking space</h1>
+			<a href=""><img src="img/LOGO.png"></a>
+			<h2>european office in the centre</h2>
+		</div>
+	<div class="logo-fbox">
+		<form action="#booking.php" method="post">
+			<p>book your place right now</p>
+			<input type="text" name="name" placeholder="Your name">
+			<input type="tel" name="phone" placeholder="Your phone number">
+			<input type="submit" class="submit" value="BOOK">
+		</form>
+	</div>
+	</div>
+	</div>		
+	</section>
+	<section class="section-advantage container" id="advantage">
+		<div class="row justify-content-center">
+			<div class="col-md-6 bg-primary">
+				<p>Lorem ipsum dolorfdsfsdfsdfsdfsdfsdfsddsdfsdf.</p>
+			</div>
+		</div>		
+		<div class="row ">
+			<div class="col-md-6 bg-primary"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta impedit eligendi quos!</p></div>
+			<div class="col-md-6 bg-primary"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta impedit eligendi quos!</p></div>
+			<a href="" class="btn btn-fill-danger">fdfdf</a>
+		</div>	
+	</section>
+	<section class="section-office" id="office">
+	<div class="inner-content"></div>		
+	</section>
+	<section class="section-discount" id="discount">
+	<div class="inner-content"></div>		
+	</section>
+	<section class="section-statistics" id="statistics">
+	<div class="inner-content"></div>		
+	</section>
+	<section class="section-reviews" id="reviews">
+	<div class="inner-content"></div>		
+	</section>
+	<section class="section-details" id="details">
+	<div class="inner-content"></div>		
+	</section>
+	<section class="section-Gift" id="Gift">
+	<div class="inner-content"></div>		
+	</section>
+	<section class="section-contact" id="contact">
+	<div class="inner-content"></div>		
+	</section>
+
+
+
+<i class="fa fa-rss"></i>main</main>
+<footer><p>dd</p>footer</footer>
+
+<script>
+  // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  // On click
+
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    // Do something else, like open/close menu
+    $(".menu").toggle();
+  });
+</script>
 </body>
+
 </html>
