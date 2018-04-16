@@ -1,0 +1,1122 @@
+@import reset
+@import "fonts.css"
+$primary_color:  #f3eebd
+$primary_bgcolor: #f6f1be
+$primary_orange: #d78e3f
+$primary_red: #5f1d1f
+$primary_blue: #acc8d4
+$primary_violet: #a986b4
+
+html
+	font-size: 10px
+body 
+	background: $primary_bgcolor
+	font-size: 1.6rem
+	width: 100%
+	margin: 0 auto
+img
+    max-width: 100%
+    height: auto
+.inner-content 
+	width: 100%
+	max-width: 1130px
+	margin: 0 auto
+.fixed-menu 
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	background-color: #0c0105
+	height: 77px
+	color: $primary_color
+	font-size: 19px
+	z-index: 5
+.hamburger-box
+	margin-top: 10px
+    //Выпадающеее меню с гамбургера
+.menu
+	position: fixed
+	display: inline
+	background-color: rgba(0, 0, 0, 0.6)
+	font-style: 2.4rem
+	font-family: Raleway-Light
+	z-index: 6
+	margin-top: 77px
+	display: none
+.menu ul a
+	text-decoration: none
+	display: block
+	color: $primary_bgcolor
+	padding-right: 4rem
+	padding-left: 4rem
+	padding-bottom: 2rem
+.menu ul li:nth-of-type(1)
+	padding-top: 2rem
+.menu ul li
+	list-style: none
+.menu ul a:hover
+	color: #000
+main 
+	margin-top: 77px
+
+.header-box 
+	display: flex
+	justify-content: space-between
+	word-wrap: nowrap
+section
+	display: block
+	padding-top: 77px
+.menu-adress span, .menu-phone span
+	display: block
+.section-header 
+	height: 98vh
+	background: url("../img/header-bg.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+
+.section-advantage 
+	height: 98vh
+	background: url("../img/section-advantage-bg.png")
+	background-repeat: no-repeat
+	margin-bottom: 2vh
+.section-office .inner-content
+	height: 98vh
+.section-discount .inner-content
+	height: 70vh
+	background-image: linear-gradient(180deg, $primary_bgcolor, transparent 40%),url("../img/discount-bg1.png"), url("../img/discount-bg2.png")
+	background-repeat: no-repeat
+	background-size: cover
+.section-statistics .inner-content
+	height: 30vh
+.section-reviews .inner-content
+	height: 92vh
+.section-details .inner-content
+	height: 92vh
+	background-image: url("../img/details-bg-c.png"), url("../img/details-bg.png")
+	background-repeat: no-repeat
+	background-size: cover
+.section-gift .inner-content
+	height: 92vh
+	background-image: linear-gradient(to bottom,$primary_bgcolor, transparent 70%, $primary_bgcolor), url("../img/gift-bg-c.png"), url("../img/gift-bg.png")
+	background-size: cover
+.section-contact .inner-content
+	height: 92vh
+	background-image: url("../img/contact-bg.png")
+	background-size: 100%
+	background-position: 50% 60%
+	background-repeat: no-repeat
+footer .inner-content
+	height: 20vh
+	background-color: $primary_red
+//------------------------Our office----------------------
+//header
+.menu-adress
+	display: flex
+.menu-adress div
+	margin: auto
+.icons
+	font-size: 2rem;
+	padding-left: 20px;
+	margin: auto
+	text-align: center
+.icons
+	a
+		color: $primary_color
+.menu-adress
+	transition: color 2s
+.menu-adress:hover
+	color: #fff
+.icons a i
+	transition: color 0.7s, transform 0.7s
+.icons a i:hover
+	color: $primary_orange
+	transform: rotateY(180deg) scale(1.9)
+.menu-phone
+	display: flex
+.menu-phone 
+	div
+		margin: auto
+.icons-social
+	align-self: center
+	padding-right: 60px
+.icons-social a
+	color: $primary_color
+	font-size: 2rem;
+	margin-right: 25px
+.icons-social a i	
+	transition: transform 0.3s
+.icons-social a i:hover
+	transform: rotateY(360deg) scale(1.9)
+
+//стилизая кнопки book на главной
+.section-header .submit 
+	cursor: pointer
+	background: #82B8CC
+	border: 1px solid #82B8CC
+	box-shadow: 0 0px 7px gray
+	padding: 8px 14px
+	color: white
+
+	transition: box-shadow 0.5s linear
+.section-header .submit:hover 
+	box-shadow: 0 0px 10px $primary_color
+.section-header .logo-box, .logo-fbox
+	text-align: center
+.section-header .form-box
+	float: right
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: flex-start
+	padding-top: 2rem
+	margin-right: 3rem
+
+.section-header .logo-fbox
+	padding: 2rem 1rem 2rem 1rem
+	background-color: rgba(238,198,128,.9)
+.section-header .logo-fbox p
+	font-family: Raleway-ExtraBold
+	font-style: 2.1rem
+	color: #2e1810
+.section-header .logo-box h1
+	color: $primary-color
+	font-family: Raleway-Black
+	font-size: 1.9vmin
+	padding-bottom: 2rem
+	text-shadow: 0 0 50px #000
+.section-header .logo-box
+	background: radial-gradient(black, transparent 80%)
+.section-header .logo-box h2
+	color: $primary-color
+	font-family: Raleway-Black
+	font-size: 2.4rem
+	text-transform: uppercase
+	padding: 2rem 2rem 0 2rem
+	text-shadow: 0 0 50px #000
+.section-header .logo-fbox p
+	text-transform: uppercase
+input
+	display: block
+	margin: 0 auto
+	font-family: Raleway-ExtraLight
+	font-style: 1.5rem
+	margin-bottom: 1rem 
+	color: #000
+	padding: 3px
+input[type=submit]
+	margin-top: 2rem
+	font-size: 3.2rem
+	font-family: Raleway-Black
+.section-header input[type=submit]
+	padding: 0 3rem 0 3rem 
+
+
+//Кнопка пролистывания вниз
+.slidedown:hover .line-sl    //анимация при наведении
+	background-color: black
+	transform: rotate(180deg)
+.slidedown:hover .rect-sl
+	width: 4rem
+	height: 4rem
+	background-color: $primary_orange //анимация при наведении
+.slidedown
+	position: absolute
+	width: 100%
+	bottom: 3%
+	left: 0
+.slidedown .line-sl
+	display: block
+	position: absolute
+	bottom: 50%
+	width: 30%
+	left: 35%
+	height: 1px
+	margin: auto
+	background-color: $primary_color
+	transition: transform 0.5s, background-color 1s
+.slidedown .rect-sl
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 3rem
+	height: 3rem
+	transform: rotate(45deg)
+	background-color: $primary_color
+	margin: auto
+	transition: width 0.5s, height 0.5s, background-color 1s
+.slidedown .rect-sl .rectinner
+	width: 60%
+	height: 60%
+	border-bottom: 2px solid black
+	border-right: 2px solid black
+	margin: auto
+// ------------section-advantage-----------
+.center 
+	max-width: 35%
+	text-align: center
+	margin-top: 2%
+.rect
+	display: inline-block
+	padding: 0.2rem 5% 0.2rem 5%
+	border: 5px solid gray
+	font-family: 
+	text-transform: uppercase
+	font-family: Raleway-Medium
+	color: #636259
+	font-size: 3.8rem
+
+.rect span
+	font-family: Raleway-SemiBold
+	color: #000
+	font-size: 4.7rem
+.rect::before
+	content: ''
+	display: block
+	position: absolute
+	left: -15%
+	bottom: 50%
+	height: 2%
+	width: 40%
+	background-color:  #000
+.rect::after
+	content: ''
+	display: block
+	position: absolute
+	right: -15%
+	bottom: 50%
+	height: 2%
+	width: 40%
+	background-color:  #000
+.h90
+	height: 90vh
+	
+
+section.section-advantage p.fraze
+	margin: 100px 0 0 0
+	font-family: Raleway-SemiBold
+	color: #3c0a0d
+	font-size: 4.7rem
+	text-align: right
+	line-height: 4rem
+	padding: 0 5rem 0 5rem
+	margin-top: 40%
+p.fraze::before
+		content: "‘‘"
+		display: block
+		float: left
+		font-size: 15rem
+p.fraze::after
+		content: "’’"
+		display: block
+		margin-top: 8rem
+		font-size: 15rem
+section.section-advantage img
+	display: inline-block
+	max-width: 22%
+	margin: 1rem
+	float: left
+.section-advantage .icons .row div
+	display: flex
+	overflow: hidden
+.section-advantage .icons div
+	align-items: flex-end
+section.section-advantage .icons p
+	display: inline-block
+
+	float: right
+	font-family: Raleway-Medium
+	font-size: 1.9rem
+	text-align: left
+
+	padding-left: 2%
+section.section-advantage div.icons .on1:before
+	content: ""
+	display: block
+	position: absolute
+	left: 16%
+	top: 32%
+	width: 1px
+	height: 150px
+	background-color: #000
+section.section-advantage div.icons .on3:before
+	content: ""
+	display: block
+	position: absolute
+	left: 16%
+	top: 65%
+	width: 1px
+	height: 150px
+	background-color: #000
+section.section-advantage .on2:before
+	content: ""
+	display: block
+	position: absolute
+	left: 16%
+	top: 0
+	width: 1px
+	height: 150px
+	background-color: #000
+section.section-advantage div.icons .on1:after
+	content: ""
+	display: block
+	position: absolute
+	left: 66%
+	top: 0
+	width: 1px
+	height: 150px
+	background-color: #000
+section.section-advantage div.icons .on2:after
+	content: ""
+	display: block
+	position: absolute
+	left: 66%
+	top: 32%
+	width: 1px
+	height: 150px
+	background-color: #000
+section.section-advantage div.icons .on3:after
+	content: ""
+	display: block
+	position: absolute
+	left: 66%
+	top: 65%
+	width: 1px
+	height: 150px
+	background-color: #000
+section.section-advantage .icons p:after
+	content: ""
+	display: block
+	position: absolute
+	left: 20%
+	bottom: 65px
+	width: 220px
+	height: 1px
+	background-color: #000
+.icons div.row div
+	padding-bottom: 70px 
+// ------------section-office-----------
+.section-office
+	font-size: 1.8rem
+	font-family: Raleway-SemiBold
+	color: #fff
+.seats-1, .seats-2, .seats-3
+	height: 31vh
+	width: 100%
+.seats-1
+	background: linear-gradient(to right, transparent 20% , $primary_orange), url(../img/office-1.png) no-repeat
+	background-size: cover
+.seats-2
+	background: linear-gradient(to left, transparent 20% , $primary_red), url(../img/office-2.png) no-repeat
+	background-size: cover
+.seats-3
+	background: linear-gradient(to right, transparent 20% , $primary_blue), url(../img/office-3.png) no-repeat
+	background-size: cover
+div.book
+	text-align: center
+div.book a
+	text-decoration: none
+	display: inline-block
+	color: #2e2e2b
+	background-color: #fff
+	text-transform: uppercase
+	font-family: Raleway-Black
+	font-size: 3.8rem
+	padding: 1rem 5rem 1rem 5rem
+.section-office h2
+	font-family: Raleway-Black
+	font-size: 3.8rem
+	text-transform: uppercase
+	text-align: center
+	border: 3px solid $primary_color
+	margin: 3rem 6rem 3rem 6rem
+.section-office h2::before
+	content: ''
+	display: block
+	position: absolute
+	left: 7%
+	top: 22%
+	height: 1%
+	width: 10%
+	background-color: $primary_color
+.section-office h2::after
+	content: ''
+	display: block
+	position: absolute
+	right: 7%
+	top: 22%
+	height: 1%
+	width: 10%
+	background-color: $primary_color
+.section-office p a
+	text-transform: uppercase
+	color: #fff
+// ------------section-discount-----------
+.section-discount .form-box2
+	margin-top: 30%
+	text-align: center
+	color: #fff
+	background-color: rgba(215,142,63,0.83)
+	border-radius: 3%
+.section-discount .form-box2 p span:nth-child(1)
+	display: block
+	font-family: Raleway-ExtraBold
+	font-size: 4rem
+	text-transform: uppercase
+.section-discount .form-box2 p span:nth-child(2)
+	display: block
+	font-family: Raleway-Medium
+	font-size: 3rem
+.section-discount .form-box2 p span:nth-child(3)
+	display: block
+	font-family: Raleway-Bold
+	font-size: 4rem
+	text-transform: uppercase
+.section-discount .form-box2 input
+	width: 90%
+	font-family: Raleway-Medium
+	font-size: 2.4rem
+	padding: 5px
+.section-discount .form-box2 .book2 a
+	text-decoration: none
+	display: inline-block
+	color: #fff
+	background-color: #00a9da
+	text-transform: uppercase
+	font-family: Raleway-ExtraBold
+	font-size: 3.8rem
+	padding: 2% 20% 2% 20%
+	margin: 3% 0 5% 0
+	box-shadow: 0 0 10px rgba(0,0,0,0.9)
+
+.section-discount .container
+	position: relative	
+
+.section-discount .girl img
+	position: absolute
+	z-index: 1
+	width: 69%
+	height: auto
+	bottom: 5%
+	left: 0
+.section-discount .girl .orange-box
+	position: absolute
+	width: 70%
+	height: 90%
+	bottom: 5%
+	left: 15%
+	border: 3px solid $primary_orange
+// ------------section-statistics-----------
+.section-statistics .inner-content .container
+	border-top: 2px solid #000
+	border-bottom: 2px solid #000
+	text-align: center
+.section-statistics .inner-content .container:before
+	content: ""
+	display: block
+	width: 100%
+	height: 2rem
+.section-statistics .inner-content .container:after
+	content: ""
+	display: block
+	width: 100%
+	height: 2rem
+.section-statistics .inner-stat
+	background-image: url("../img/statistics.png")
+	background-size: cover
+	color: $primary_bgcolor
+.section-statistics .inner-stat div span
+	display: block
+	margin: 10%
+	box-sizing: border-box
+	color: $primary_bgcolor
+.section-statistics .inner-stat div:nth-child(1)
+	background: linear-gradient(to bottom, transparent 20% , $primary_orange), no-repeat
+.section-statistics .inner-stat div:nth-child(2)
+	background: linear-gradient(to bottom, transparent 20% , $primary_red), no-repeat
+.section-statistics .inner-stat div:nth-child(3)
+	background: linear-gradient(to bottom, transparent 20% , $primary_blue), no-repeat
+.section-statistics .inner-stat div:nth-child(4)
+	background: linear-gradient(to bottom, transparent 20% , $primary_violet), no-repeat	
+.section-statistics .inner-stat div:nth-child(1) span:nth-child(1)
+	background-color: rgba(216, 150, 77, 0.85);
+	font-family: Raleway-Bold
+	font-size: 5.5rem
+.section-statistics .inner-stat div:nth-child(2) span:nth-child(1)
+	background-color: rgba(95, 29, 31, 0.85);
+	font-family: Raleway-Bold
+	font-size: 5.5rem
+.section-statistics .inner-stat div:nth-child(3) span:nth-child(1)
+	background-color: rgba(172, 200, 212, 0.85);
+	font-family: Raleway-Bold
+	font-size: 5.5rem
+.section-statistics .inner-stat div:nth-child(4) span:nth-child(1)
+	background-color: rgba(169, 134, 180, 0.85);
+	font-family: Raleway-Bold
+	font-size: 5.5rem
+.section-statistics .inner-stat div span:nth-child(2)
+	font-family: Raleway-Bold
+	font-size: 2.8rem
+	border: 0.3rem solid $primary_bgcolor
+.section-statistics .inner-stat span:nth-child(2):before
+	content: ''
+	display: block
+	position: absolute
+	left: 5%
+	bottom: 22%
+	height: 1%
+	width: 15%
+	background-color: $primary_bgcolor
+.section-statistics .inner-stat span:nth-child(2):after
+	content: ''
+	display: block
+	position: absolute
+	right: 5%
+	bottom: 22%
+	height: 1%
+	width: 15%
+	background-color: $primary_bgcolor
+.section-statistics .inner-stat div:nth-child(1) span:nth-child(1):after
+	content: 'sq.ft'
+	position: absolute
+	font-family: Raleway-ExtraBold
+	font-size: 2.8rem
+	top: 40%
+	left: 50%
+// ------------section-reviews-----------
+.section-reviews .inner-content .section-1, .section-2
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+	justify-content: space-between
+	text-align: center
+	height: 45vh
+.section-reviews .section-1 div:nth-child(odd)
+	clip-path: polygon(0 0, 50% 100%, 100% 0)
+.section-reviews .section-1 div:nth-child(even)
+	clip-path: polygon(50% 0, 0 100%, 100% 100%)
+.section-reviews .section-2 div:nth-child(odd)
+	clip-path: polygon(50% 0, 0 100%, 100% 100%)
+.section-reviews .section-2 div:nth-child(even)
+	clip-path: polygon(0 0%, 50% 100%, 100% 0%)
+
+.section-1
+	position: relative
+	margin-bottom: 0.5%
+.section-2
+	position: relative
+// ------------плитка-----------
+.section-reviews .section-1 div:nth-child(1)
+	background: url(../img/reviews/layer6151.png)
+	background-size: cover
+	width: 32.5%
+.section-reviews .section-1 div:nth-child(2)
+	background: url(../img/reviews/alex.png)
+	background-size: cover
+	position: absolute
+	width: 34%
+	height: 45vh
+	left: 16.3%
+.section-reviews .section-1 div:nth-child(3)
+	background: url(../img/reviews/layer6145.png)
+	background-size: cover
+	width: 32.5%
+.section-reviews .section-1 div:nth-child(4)
+	background: url(../img/reviews/denis.png)
+	background-size: cover
+	position: absolute
+	width: 34%
+	height: 45vh
+	left: 50%
+.section-reviews .section-1 div:nth-child(5)
+	background: url(../img/reviews/chairs.png)
+	background-size: cover
+	width: 32.5%
+.section-reviews .section-2 div:nth-child(1)
+	background: url(../img/reviews/curly_girl.png)
+	background-size: cover
+	width: 32.2%
+.section-reviews .section-2 div:nth-child(2)
+	background: url(../img/reviews/razmytyi.png)
+	background-size: cover
+	position: absolute
+	width: 34%
+	height: 45vh
+	left: 16.2%
+.section-reviews .section-2 div:nth-child(3)
+	background: url(../img/reviews/bottom-room.png)
+	background-size: cover
+	width: 32.2%
+.section-reviews .section-2 div:nth-child(4)
+	background: url(../img/reviews/elephant.png)
+	background-size: cover
+	position: absolute
+	width: 34%
+	height: 45vh
+	left: 50.1%
+.section-reviews .section-2 div:nth-child(5)
+	background: url(../img/reviews/jane.png)
+	background-size: cover
+	width: 32.2%
+
+// ------------section-reviews внутренности-----------
+.section-reviews .text-orange
+	display: block
+	height: 100%
+	color: #fff
+	background-color: rgba(216, 150, 77, 0.85)
+	padding: 0 25px 0 25px
+.section-reviews .text-red
+	display: block
+	height: 100%
+	color: #fff
+	background-color: rgba(95, 29, 31, 0.85)
+.section-reviews .text-block
+	display: inline-block
+	font-family: Raleway-Bold
+	font-size: 2.4rem
+	width: 50%
+	text-align: center
+	margin-top: 80%
+	padding: 2%
+	color: $primary_red
+	background-color: rgba(210, 210, 210, 0.85)
+.section-reviews .alex:after
+	content: 'web-designer'
+	display: block
+	text-align: right
+	font-size: 2.0rem
+.section-reviews .den:after
+	content: 'php-developer'
+	display: block
+	text-align: right
+	font-size: 2.0rem
+.section-reviews .anna:after
+	content: 'art editor'
+	display: block
+	text-align: right
+	font-size: 2.0rem
+.section-reviews .jane:after
+	content: 'journalist'
+	display: block
+	text-align: right
+	font-size: 2.0rem
+.section-reviews .bg-orange
+	display: block
+	height: 70%
+	background: linear-gradient(to top, transparent 80% , $primary_orange), no-repeat
+.section-reviews .bg-red
+	display: block
+	height: 100%
+	background: linear-gradient(to bottom, transparent 80% , $primary_orange), no-repeat
+.section-reviews .section-1::after
+	content: ""
+	display: block
+	position: absolute
+	right: 0%
+	bottom: -6%
+	width: 70px
+	height: 50px
+	background: url(../img/icons/arrow-right.png) no-repeat
+	background-size: 90%
+	z-index: 2
+	transition: transform 1s
+.section-reviews .section-1:hover::after
+	transform: translate(15px)
+.section-reviews .section-1:hover::before
+	transform: translate(-15px)
+.section-reviews .section-1::before
+	content: ""
+	display: block
+	position: absolute
+	left: 0
+	bottom: -6%
+	width: 70px
+	height: 50px
+	background: url(../img/icons/arrow-left.png) no-repeat
+	background-size: 90%
+	z-index: 2
+	transition: transform 1s
+//checkbox style------------
+.radio-slider
+	display: block
+.check-container
+    display: inline-block
+    position: relative
+    padding-left: 11px
+    margin-bottom: 0px
+    cursor: pointer
+    font-size: 22px
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+/* Hide the browser's default radio button */
+.check-container input
+    position: absolute
+    opacity: 0
+    cursor: pointer
+/* Create a custom radio button */
+.checkmark
+    position: absolute
+    top: 0
+    left: 0
+    height: 12px
+    width: 12px
+    border: 1px solid #fff
+    border-radius: 50%
+/* On mouse-over, add a grey background color */
+.check-container:hover input ~ .checkmark 
+    background-color: #fff
+/* When the radio button is checked, add a blue background */
+.check-container input:checked ~ .checkmark 
+    background-color: $primary_color
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after 
+    content: ""
+    position: absolute
+    display: none
+/* Show the indicator (dot/circle) when checked */
+.check-container input:checked ~ .checkmark:after
+    display: block
+
+
+// ------------section-details-----------
+.section-details .orange-box
+	border: 3px solid $primary_orange
+	margin: 7% 5% 0 8%
+	height: 100%
+.section-details h2
+	font-family: Raleway-Bold
+	font-size: 4rem
+	color: #6d2504
+	margin-top: 20%
+.section-details h2::before
+		content: "‘‘"
+		display: inline-block
+		float: left
+		position: relative
+		font-size: 7rem
+		bottom: 10px
+.section-details h2::after
+		content: "’’"
+		display: inline-block
+		position: relative
+		font-size: 7rem
+		top: 60px
+.section-details .detail-icons
+	display: flex
+	flex-direction: column
+	justify-content: center
+.section-details .detail-icons div
+	height: 25%
+	display: flex
+	flex-wrap: nowrap
+	align-items: stretch
+.section-details .detail-icons span
+	align-self: center
+	font-family: Raleway-Regular
+	font-size: 1.9rem
+	color: #6d2504
+	padding-left: 10px
+.section-details .detail-icons img
+	align-self: center
+	width: 20%
+	margin-bottom: -25%
+.section-details .detail-icons span::after
+	content: ""
+	display: block
+	height: 2px
+	width: 170px
+	background: #000
+	position: relative
+	left: -25px
+.section-details .detail-icons span::before
+	content: ""
+	display: block
+	height: 100px
+	width: 2px
+	background: #000
+	position: relative
+	left: -4%
+	bottom: -75px
+// ------------section-gift-----------
+.section-gift .inner-content
+	position: relative
+.section-gift .logo-fbox
+	margin-left: 9%
+	margin-top: 9%
+	background-color: rgba(150, 192, 210, 0.83)
+	border-radius: 2%
+	color: #fff
+	z-index: 1
+.section-gift .logo-fbox p:first-child
+	font-family: Raleway-Bold
+	font-size: 4.8rem
+	text-transform: uppercase
+	color: #fff
+.section-gift .logo-fbox p:nth-child(2)
+	color: #fff
+	font-family: Raleway-Medium
+	font-size: 3rem
+.section-gift .logo-fbox p a
+	color: #fff
+	text-decoration: underline
+.section-gift .logo-fbox input
+	width: 90%
+	padding: 2%
+	font-family: Raleway-Medium
+	font-size: 2.4rem
+.section-gift .logo-fbox input[type="submit"]
+	width: 60%
+	font-family: Raleway-Bold
+	font-size: 3.6rem
+	background-color: #c11b35
+	border: 1px solid #c11b35
+	box-shadow: 0 3px 5px #000
+.section-gift .gift-txt
+	background-color: rgba(150, 192, 210, 0.83)
+	border-radius: 5px
+	margin-left: 9%
+	color: #fff
+	text-align: center
+	text-transform: uppercase
+	position: absolute
+	bottom: 0
+.section-gift .gift-txt p:first-child
+	font-family: Raleway-Bold
+	font-size: 3.6rem
+	padding-top: 2rem
+	margin: 0 auto
+.section-gift .gift-txt p:last-child
+	font-family: Raleway-ExtraBold
+	font-size: 4.8rem
+	margin-top: -1.5rem
+	padding-bottom: 1rem
+.section-gift .girl
+	position: absolute
+	bottom: 0
+// ------------section-contact-----------
+.section-contact .container
+	position: relative
+.section-contact .orange-box //оранжевая рамка
+	height: 100%
+	border: 4px solid rgba(215, 142, 43, 0.43)
+	margin: 7% 7% 15% 8%
+.section-contact h2 // заголовок
+	display: block
+	text-align: center
+	font-family: Raleway-Bold
+	font-size: 3.6rem
+	color: #3c3b35
+	text-transform: uppercase
+	padding-bottom: 2rem
+.section-contact p // текст ниже заголовка
+	display: block
+	text-align: center
+	font-family: Raleway-Medium
+	font-size: 1.8rem
+	color: #5b5a51
+.section-contact .place-box
+	color: #7b7470
+	font-family: Raleway-Bold
+	font-size: 1.8rem
+	text-align: center
+//стилизация блоков с метками
+.section-contact .place-box span
+	display: block
+	position: absolute
+	width: 146px
+	height: 32px
+	border: 4px solid rgba(215, 142, 43, 0.93)
+	background-color: rgba(255, 255, 255, 0.55)
+.section-contact .place-box span:after
+	content: ""
+	display: block
+	position: absolute		
+	left: 72px 
+	width: 1px
+	background-color: rgba(215, 142, 43, 0.93)
+.section-contact .place-box span:before
+	content: ""
+	display: block
+	position: absolute
+	left: 63px
+	width: 20px
+	height: 20px
+	background-color: $primary_orange
+	border: 6px solid rgba(220, 218, 198, 0.91)
+	border-radius: 50%
+//Расположение блоков с метками
+// Park
+.section-contact .place-box span:nth-child(1)
+	left: 15% //позиционирование блока с текстом
+	top: 23%
+.section-contact .place-box span:nth-child(1):after
+	height: 110px //высота линии
+.section-contact .place-box span:nth-child(1):before
+	top: 136px //высота метки
+// Market
+.section-contact .place-box span:nth-child(2)
+	left: 35% //позиционирование блока с текстом
+	top: 26%
+.section-contact .place-box span:nth-child(2):after
+	height: 30px //высота линии
+.section-contact .place-box span:nth-child(2):before
+	top: 56px //высота метки
+// MC Donald's
+.section-contact .place-box span:nth-child(3)
+	left: 52% //позиционирование блока с текстом
+	top: 24%
+.section-contact .place-box span:nth-child(3):after
+	height: 70px //высота линии
+.section-contact .place-box span:nth-child(3):before
+	top: 96px //высота метки
+// 1969 open
+.section-contact .place-box span:nth-child(4)
+	left: 73% //позиционирование блока с текстом
+	top: 22%
+.section-contact .place-box span:nth-child(4):after
+	height: 150px //высота линии
+.section-contact .place-box span:nth-child(4):before
+	top: 176px //высота метки
+// Cofee life
+.section-contact .place-box span:nth-child(5)
+	left: 52% //позиционирование блока с текстом
+	top: 49%
+.section-contact .place-box span:nth-child(5):after
+	height: 150px //высота линии
+.section-contact .place-box span:nth-child(5):before
+	top: 176px //высота метки
+.section-contact .place-box span:nth-child(4)
+	font-family: Raleway-ExtraBold
+	text-transform: uppercase
+	color: #a34711
+// ------------FOOTER-----------
+footer .inner-content
+	color: $primary_color
+	display: flex
+	flex-wrap: nowrap
+	justify-content: space-around
+	padding-top: 15px
+footer p
+	font-family: Raleway-ExtraBold
+	font-size: 2.4rem
+	text-transform: uppercase
+footer a
+	display: block
+	color: $primary_color
+footer .adress span, footer .contact a, footer .adress p a
+	font-family: Raleway-SemiBold
+	font-size: 2rem
+footer .footer-icons a
+	display: inline-block
+	font-size: 3rem
+footer .footer-icons a:nth-child(2) //отступ от средней иконки слева и справа
+	margin: 0 20px
+footer .adress
+	text-align: left
+footer .social
+	text-align: center
+	align-self: stretch
+footer .contact
+	text-align: right
+//---------------Modal popup window--------------
+.modal-content
+	background-image: linear-gradient(transparent 15%, $primary_bgcolor, transparent 80%), url("../img/popup.png") 
+	background-repeat: no-repeat
+	background-size: cover
+	text-align: center
+	font-family: Raleway-SemiBold
+.modal-header h3
+	margin: auto
+	color: #fff
+	font-size: 4rem
+.modal-header h3 span
+.modal-body h3
+	padding: 15% 0 15% 0
+	color: $primary_red
+	font-size: 4rem
+.modal-header
+	background-color: $primary_red
+.modal-footer
+	background-color: $primary_red
+.modal-footer h3
+	padding: 5% 0 5% 0
+	margin: auto
+	color: #fff
+	font-size: 3.6rem
+.close
+.modal-header .popup-closebtn span
+	display: block
+	font-family: Raleway-ExtraLight
+	font-size: 6rem
+	line-height: 0.1
+
+.modal-header button
+	color: $primary_color
+	width: 36px
+	height: 36px
+	padding: 0 1px 10px 0
+	position: absolute
+	right: -5%
+	top: -3%
+	background-color: gray
+	border-radius: 50%
+	border: 1px solid $primary_orange
+.modal-header button:hover
+	border: 1px solid $primary_color
+	background-color: $primary_color
+	color: #000
+	cursor: pointer
+//---------------------MEDIA QUeries-----------------
+@media screen and (max-width: 778px)
+  .menu-adress, .menu-phone
+  	font-size: 1.5rem
+  .menu-phone
+  	display: none
+  .icons-social
+  	display: inline-block
+  	padding-right: 0
+  	margin: auto
+  .hamburger
+  	display: inline-block
+  	padding-right: 0
+  .header-box
+  	justify-content: flex-start
+  .section-advantage .icons div
+  	display: none
+  div.book a
+  	padding: 1rem
+  	font-size: 2rem
+  .section-statistics .inner-content
+  	height: 60vh
+  .section-gift .logo-fbox p:first-child
+  	font-family: Raleway-Bold
+  	font-size: 2.8rem
+  footer .footer-icons a
+  	font-size: 3rem
+  footer p
+  	font-size: 1.7rem
+  footer .adress span, footer .contact a, footer .adress p a
+  	font-size: 1.3rem
+  .section-contact .place-box span:nth-child(4)
+  	left: 65%
+  	top: 30%
+@media screen and (max-width: 450px)
+  .menu-adress, .menu-phone
+  	display: none
+  .icons-social
+  	display: inline-block
+  	padding-right: 0
+  	margin: auto
+  .hamburger
+  	display: inline-block
+  	padding-right: 0
+  .header-box
+  	justify-content: flex-start
+  p.fraze
+  	font-size: 4rem
+  	margin-top: 20%
+  p.fraze::before, p.fraze::after
+  	font-size: 7rem
+

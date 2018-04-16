@@ -8,14 +8,15 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome/font-awesome.css">
 	<link rel="stylesheet" href="css/hamburgers.css">
+<script src="js/lib/jquery-3.3.1.min.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
+<!-- <script src="js/lib/modal.js"></script> -->
 
-	<script
+<!-- 	<script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-
-
-
+  crossorigin="anonymous"></script> -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body>
 <!--HEADER-->
@@ -31,7 +32,7 @@
 				<span>Kharkiv, 3, Sumskay st.</span><span>info@open1969.com</span>
 			</div>
 			<div class="icons">
-				<a href=""><i class="fa fa-map-marker"></i></a>
+				<a href="#contact"><i class="fa fa-map-marker"></i></a>
 			</div>
 		</div>
 		<div class="menu-phone col-3"> 
@@ -42,83 +43,359 @@
 				<a href=""><i class="fa fa-phone"></i></a>
 			</div>
 		</div>
-		<div class="icons-social col-md-auto">
+		<div class="icons-social">
 		<a href=""><i class="fa fa-twitter"></i></a>
 		<a href=""><i class="fa fa-instagram"></i></a>
 		<a href=""><i class="fa fa-facebook"></i></a>
 		</div>
+
+		<div class="menu"><ul>
+			<li><a href="#advantage">Advantage</a></li>
+			<li><a href="#office">Our offices</a></li>
+			<li><a href="#discount">Discount</a></li>
+			<li><a href="#statistics">Statistics</a></li>
+			<li><a href="#reviews">Reviews</a></li>
+			<li><a href="#details">Details</a></li>
+			<li><a href="#gift">Gift</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>	</div>
 	</div>
+
 </header>
+
 <!--CONTENT-->
 <main>
 	<section class="section-header">
 	<div class="inner-content">
-		<div class="menu"><ul>
-			<li><a href="#advantage" onclick="slowScroll('#advantage')">Advantage</a></li>
-			<li><a href="#">Our offices</a></li>
-			<li><a href="#">Discount</a></li>
-			<li><a href="#">Statistics</a></li>
-			<li><a href="#">Reviews</a></li>
-			<li><a href="#">Details</a></li>
-			<li><a href="#">Gift</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>	</div>
-		<div class="form-box">
+	<div class="container">
+		
+		<div class="form-box col-md-4 col-12">
 		<div class="logo-box">
-			<h1>coworking space</h1>
+			<h1>Coworking space</h1>
 			<a href=""><img src="img/LOGO.png"></a>
 			<h2>european office in the centre</h2>
 		</div>
 	<div class="logo-fbox">
-		<form action="#booking.php" method="post">
+		<form action="#">
 			<p>book your place right now</p>
 			<input type="text" name="name" placeholder="Your name">
-			<input type="tel" name="phone" placeholder="Your phone number">
-			<input type="submit" class="submit" value="BOOK">
+			<input type="tel" name="phone" placeholder="Your phone number" pattern="2-[0-9]{3}-[0-9]{3}">
+			<input type="submit" class="submit" value="BOOK" data-toggle="modal" data-target="#exampleModalCenter">
 		</form>
 	</div>
 	</div>
-	</div>		
+	</div>	
+		<div class="slidedown">
+		<div class="line-sl col-5"></div>
+		<div class="rect-sl">
+			<div class="rectinner"><a href="#advantage"></a></div>
+		</div>
+	</div>
+	</div>	
 	</section>
 	<section class="section-advantage container" id="advantage">
+	<div>
 		<div class="row justify-content-center">
-			<div class="col-md-6 bg-primary">
-				<p>Lorem ipsum dolorfdsfsdfsdfsdfsdfsdfsddsdfsdf.</p>
+			<div class="col-md-6 col-12 center">
+				<h2 class="rect">Why <span>we</span></h2>
 			</div>
 		</div>		
-		<div class="row ">
-			<div class="col-md-6 bg-primary"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta impedit eligendi quos!</p></div>
-			<div class="col-md-6 bg-primary"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta impedit eligendi quos!</p></div>
-			<a href="" class="btn btn-fill-danger">fdfdf</a>
-		</div>	
+		<div class="row align-items-center">
+			<div class="col-md-6 col-12 h90"> 
+				<p class="fraze">Great companies start in good company</p>
+			</div>
+			<div class="col-md-6 col-sm-12 icons"> 
+			<div class="row on1">
+				<div class="col-md-6">
+					<img src="img/icons/adv-comp.svg" alt="modern equipment">
+					<p>Modern equipment, Powerful computers</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/icons/adv-hands.svg" alt="Various public ">
+					<p>Various public events</p>
+				</div>
+			</div>
+			<div class="row on2">	
+				<div class="col-md-6">
+					<img src="img/icons/adv-meet.svg" alt="meeting">
+					<p>Comfortable meeting rooms, with the whole set of equipment</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/icons/adv-sales.svg" alt="Discounts">
+					<p>Discounts for regular customers</p>
+				</div>
+			</div>
+			<div class="row on3">
+				<div class="col-md-6">
+					<img src="img/icons/adv-clock.svg" alt="Access">
+					<p>Access to the office 24/7</p>
+				</div>
+				<div class="col-md-6 lastimg">
+					<img src="img/icons/adv-clear.svg" alt="Quality">
+					<p>Quality daily wet cleaning</p>
+				</div>
+			</div>
+			</div>
+		</div>		
+		</div>		
+
 	</section>
+<!--section-office-->
 	<section class="section-office" id="office">
-	<div class="inner-content"></div>		
+	<div class="inner-content container">
+	<div class="row">
+		<div class="seats-1">
+		<div class="row justify-content-end">
+			<div class="seats-txt1 col-12 col-md-6">	
+				<h2>Office 50 seats</h2>
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi enim beatae corrupti fuga alias dignissimos. <a href="#">see more <i class="fa fa-arrow-right"></i></a></p>
+				<div class="book"><a href="#">book</a></div>
+			</div>
+		</div>
+		</div>
+		<div class="w-100"></div>
+		
+		<div class="seats-2">
+		<div class="row justify-content-start">
+			<div class="seats-txt2 col-12 col-md-6">
+				<h2>Office 20 seats</h2>
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi enim beatae corrupti fuga alias dignissimos. <a href="#">see more <i class="fa fa-arrow-right" aria-hidden="true"></i></a></p>
+				<div class="book"><a href="#">book</a></div>
+			</div>
+			</div>
+		</div>
+		<div class="w-100"></div>
+		<div class="seats-3">
+			<div class="row justify-content-end">
+			<div class="seats-txt3 col-12 col-md-6">
+				<h2>Office 6 seats</h2>
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi enim beatae corrupti fuga alias dignissimos. <a href="#">see more <i class="fa fa-arrow-right" aria-hidden="true"></i></a></p>
+				<div class="book"><a href="#">book</a></div>
+			</div>
+			</div>
+		</div>
+	</div>
+	</div>		
 	</section>
 	<section class="section-discount" id="discount">
-	<div class="inner-content"></div>		
+	<div class="inner-content container">
+		<div class="row justify-content-end align-items-center">
+
+	<div class="girl"><div class="orange-box"></div><img src="img/discount-girl.png"></div>	
+
+			<div class="col-5 align-self-center">	
+			<div class="form-box2">
+			<p><span>Hurry up </span><span>and get </span><span>40% discount</span></p>
+	<form>
+		<input type="text" name="name" placeholder="Your name">
+		<input type="tel" name="tel" placeholder="Your phone number">
+		<div class="book2"><a href="#">book</a></div>
+	</form>			
+			</div>
+			</div>
+		</div>
+
+	</div>		
 	</section>
 	<section class="section-statistics" id="statistics">
-	<div class="inner-content"></div>		
+	<div class="inner-content">
+		<div class="container">
+			<div class="inner-stat row">
+				<div class="col-md-3 col-6"><span>1051</span><span>space</span></div>
+				<div class="col-md-3 col-6"><span>15</span><span>offices</span></div>
+				<div class="col-md-3 col-6"><span>670</span><span>computers</span></div>
+				<div class="col-md-3 col-6"><span>670</span><span>customers</span></div>
+			</div>
+		</div>
+	</div>		
 	</section>
 	<section class="section-reviews" id="reviews">
-	<div class="inner-content"></div>		
+	<div class="inner-content container">
+	<div class="section-1 row">
+		<div><span class="text-orange">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, optio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, at.
+			<span class="radio-slider">
+			<label class="check-container">
+			  <input type="radio" checked="checked" name="radioOrange1">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="check-container">
+			  <input type="radio" name="radioOrange1">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="check-container">
+			  <input type="radio" name="radioOrange1">
+			  <span class="checkmark"></span>
+			</label></span>
+		</span></div>
+		<div><span class="bg-orange"><span class="text-block alex">
+			Alex, 35
+		</span></span> </div>
+		<div><span class="bg-orange"></span></div>
+		<div ><span class="bg-orange"><span class="text-block den">
+			Denis, 28
+		</span></span></div>
+		<div><span class="text-orange">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, optio! 
+		<span class="radio-slider">
+		<label class="check-container">
+		  <input type="radio" checked="checked" name="radioOrange2">
+		  <span class="checkmark"></span>
+		</label>
+		<label class="check-container">
+		  <input type="radio" name="radioOrange2">
+		  <span class="checkmark"></span>
+		</label>
+		<label class="check-container">
+		  <input type="radio" name="radioOrange2">
+		  <span class="checkmark"></span>
+		</label></span>
+		</span></div>
+		</div>
+	<div class="section-2 row">
+		<div><span class="bg-red"><span class="text-block anna">
+			Anna, 23
+		</span></span></div>
+		<div><span class="text-red">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, optio! 
+			<span class="radio-slider">
+			<label class="check-container">
+			  <input type="radio" checked="checked" name="radioRed1">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="check-container">
+			  <input type="radio" name="radioRed1">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="check-container">
+			  <input type="radio" name="radioRed1">
+			  <span class="checkmark"></span>
+			</label></span>
+		</span></div>
+		<div><span class="bg-red"></span></div>
+		<div><span class="text-red">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, optio! 
+			<span class="radio-slider">
+			<label class="check-container">
+			  <input type="radio" checked="checked" name="radioRed2">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="check-container">
+			  <input type="radio" name="radioRed2">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="check-container">
+			  <input type="radio" name="radioRed2">
+			  <span class="checkmark"></span>
+			</label></span>
+		</span></div>
+		<div><span class="bg-red"><span class="text-block jane">
+			Jane, 27
+		</span></span></div>
+	</div>
+	</div>		
 	</section>
 	<section class="section-details" id="details">
-	<div class="inner-content"></div>		
+	<div class="inner-content container">
+		<div class="orange-box row">
+				<div class="text col-8"><h2>It&rsquo;s all in the details</h2></div>
+				<div class="detail-icons col-4 col-md-4">
+
+				<div><img src="img/icons/metro.svg" alt="metro"><span>Great location, 5 minutes to metro</span></div>
+				<div><img src="img/icons/coffee.svg" alt="coffee"><span>Free tea, coffee and sweets</span></div>
+				<div><img src="img/icons/book.svg" alt="book"><span>Our own little <br>library</span></div>
+				<div><img src="img/icons/people.svg" alt="people"><span>Always good <br>company</span></div>
+				</div>
+		</div>
+	</div>		
 	</section>
-	<section class="section-Gift" id="Gift">
-	<div class="inner-content"></div>		
+	<section class="section-gift" id="gift">
+	<div class="inner-content container">
+		<div class="row">
+			<div class="col-10 col-md-4 logo-fbox">
+				<form action="#booking.php" method="post">
+			<p>get a month free</p>
+			<p>Take part in the action simply <a href="subscribe.php">subscribe</a> to us</p>
+			<input type="text" name="name" placeholder="Your name">
+			<input type="tel" name="phone" placeholder="Your phone number">
+			<input type="submit" class="submit" value="TAKE PART">
+		</form>
+			</div>
+			<div class="girl"><img src="img/Gift-girl.png"></div>
+			<div class="col-11 col-md-11 gift-txt"> <p>join the team</p>
+			<p>work with us</p> </div>
+		</div>
+
+	</div>		
 	</section>
 	<section class="section-contact" id="contact">
-	<div class="inner-content"></div>		
+	<div class="inner-content container">
+	<div class="orange-box">
+		<div>
+			<h2>location</h2>
+			<p class="col-6 offset-3">Central Kharkiv is the perfect location because of its close proximity to the commercial, retail and entertaiment hubs</p>
+		</div>
+		<div class="place-box">
+			<span>Park</span>
+			<span>Market</span>
+			<span>MC Donald's</span>
+			<span>1969 open</span>
+			<span>Cofee life</span>
+		</div>
+		</div>
+	</div>		
 	</section>
 
+</main>
+<footer>
+<div class="inner-content">
+	<div class="adress">
+		<p>coworking space</p>
+		<span>Kharkiv, 3, Sumskay st.</span>
+		<p><a href="mailto:info@open1969.com">info@open1969.com</a></p>
+	</div>
+	<div class="social">
+		<p>follow us</p>
+		<div class="footer-icons">
+		<a href=""><i class="fa fa-twitter"></i></a>
+		<a href=""><i class="fa fa-instagram"></i></a>
+		<a href=""><i class="fa fa-facebook"></i></a>
+		</div>
+		<a href=""><img src="img/LOGO.png"></a>
+	</div>
+	<div class="contact">
+		<p>contact</p>
+		<a href="tel:+380680894883">+38 (068) 089-48-83</a>
+		<a href="tel:+380588549365">+38 (058) 854-93-65</a>
+	</div>
+</div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <h3><span>Thank you,</span> <p>your request has been accepted!</p></h3>
+              <button type="button" class="popup-closebtn" data-dismiss="modal" aria-label="Close">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		    <div>
+		        <h3>We are glad that you joined us</h3>
+	        </div>
+      </div>
+      <div class="modal-footer">
+<h3>Our manager will contact you shortly.</h3>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-<i class="fa fa-rss"></i>main</main>
-<footer><p>dd</p>footer</footer>
-
+<script src="js/main.js"></script>
 <script>
   // Look for .hamburger
   var hamburger = document.querySelector(".hamburger");
@@ -131,6 +408,7 @@
     $(".menu").toggle();
   });
 </script>
+
 </body>
 
 </html>

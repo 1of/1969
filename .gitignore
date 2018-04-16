@@ -1,5 +1,2 @@
-$ cat .gitignore
-
-*.[psd]
-
-*.~
+node_modules/
+img/
